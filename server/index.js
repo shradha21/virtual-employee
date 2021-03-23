@@ -12,7 +12,7 @@ const users= [
 ]
 
 app.post('/users', (req,res) => {
-  res.json(users)  
+  res.send(users)  
 })
 
 app.get('/users', (req,res) => {
