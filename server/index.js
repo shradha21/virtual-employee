@@ -11,6 +11,10 @@ const users= [
     {"start_time":"15:30","end_time":"16:00","description":"Development team of Deal**y project will do a KT session of the last sprint.","participants":["Sushant Sehgal","Prashant Lehri"]}
 ]
 
+app.post('/users', (req,res) => {
+  res.json(users)  
+})
+
 app.get('/users', (req,res) => {
     res.json(users)
 } )
